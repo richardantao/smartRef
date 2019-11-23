@@ -9,7 +9,7 @@ import {
     Input
 } from "reactstrap"
 
-import "Appointment.css"
+import "./Appointment.css"
 
 export default class Appointment extends Component {
     render() {

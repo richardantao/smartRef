@@ -2,7 +2,7 @@ import React, {Component} from "react";
 
 import {Form, FormGroup, Label, Input, Button} from "reactstrap";
 
-import "Search.css";
+import "./Search.css";
 
 export default class Search extends Component {
 	
