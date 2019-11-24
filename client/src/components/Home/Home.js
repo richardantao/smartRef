@@ -5,6 +5,8 @@ import { Button } from "reactstrap";
 
 import "./Home.css";
 
+import logo from "./SmartRef.png"
+
 
 export default class Home extends Component {
     render() {
@@ -14,9 +16,11 @@ export default class Home extends Component {
                     English
                 </Button>
 
-                <Button href="/">
+                <Button href="/searchFrench">
                     Français
                 </Button>
+
+				<img src={logo} width="350" height="250"/>
 
             </div>
         );

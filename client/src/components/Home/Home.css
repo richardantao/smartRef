@@ -6,17 +6,23 @@ a {
     border: none;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     display: inline-block;
     border-radius: 150px;
-    font-family: Verdana;
+    font-family: 'Quicksand', sans-serif;
     line-height: 10px;
     position: relative;
-    left: 31%;
-    margin-left: 5%;
-    margin-top: 25%;
+    margin-left: 25%;
+    margin-top: 28%;
 }
 
 body {
     background: #66b26c;
+}
+
+img{
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -37.5%;
 }

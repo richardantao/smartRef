@@ -1,0 +1,33 @@
+
+input {
+    text-align: center;
+    color: #5a5a5a;
+    font-style: italic;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.h2Appt {
+    color: #5a5a5a;
+    font-style: normal;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.bkgdAppt {
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    position: relative;
+    left: 22%;
+    border-radius: 50px;
+    margin-top: 8.5%;
+}
+
+form input {
+    position: relative;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 12%;
+}
