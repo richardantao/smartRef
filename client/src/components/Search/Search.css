@@ -2,8 +2,35 @@ input {
     text-align: center;
     color: #5a5a5a;
     font-style: italic;
+    font-family: Verdana;
 }
 
-button {
-    
+.bkgd {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    left: 22%;
+    border-radius: 50px;
+    margin-top: 8.5%;
+}
+
+form input {
+    position: relative;
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+form button {
+    background-color: #66b26c;
+    box-shadow: rgba(0,0,0,0.6) 0px 1px 3px;
+    padding: 20px 40px;
+    border: none;
+    display: inline-block;
+    border-radius: 150px;
+    position: relative;
+    left: 1%;
+    margin-left: 35%;
+    margin-top: 40%;
 }
