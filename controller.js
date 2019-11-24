@@ -29,7 +29,9 @@ controller.search = (req, res) => {
     - Return results to client
 */
 controller.results = (req, res) => {
-    
+    const { id } = req.query;
+
+    Patient.find(id)    
 };
 
 /*
@@ -42,10 +44,6 @@ controller.appointment = (req, res) => {
 // POST appointment and return error
 controller.booking = (req, res) => {
     const { } = req.body;
-
-    const appointment = {
-        
-    };
 
     appointment.save()
     .then(newApp => {
