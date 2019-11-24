@@ -1,7 +1,7 @@
 {
-  "name": "practical",
+  "name": "smart-ref",
   "version": "0.1.0",
-  "description": "",
+  "description": "A web application that optimizes the referral and wait times when visiting a health specialist from your family phsysician",
   "main": "server.js",
   "scripts": {
     "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/richardantao/practical.git"
+    "url": "git+https://github.com/richardantao/smartRef.git"
   },
   "authors": {
     "analyst": "Sharif Natheir",
