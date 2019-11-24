@@ -18,8 +18,8 @@ input {
 form input {
     position: relative;
     width: 50%;
-    margin-left: 35%;
-    margin-top: 5%;
+    margin-left: 25%;
+    margin-top: 10%;
 }
 
 form button {
@@ -31,6 +31,6 @@ form button {
     border-radius: 150px;
     position: relative;
     left: 1%;
-    margin-left: 35%;
-    margin-top: 40%;
+    margin-left: 42%;
+    margin-top: 15%;
 }
