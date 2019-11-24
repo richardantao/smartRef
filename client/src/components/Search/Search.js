@@ -27,7 +27,7 @@ export default class Search extends Component {
 								<Input name="specType" type="text" placeholder="Specialist Type"/>
 							</FormGroup>
 								<Button onSubmit={this.handleSubmit}>
-									<FontAwesomeIcon
+									<FontAwesomeIcon/>
 								</Button>
 						</Form>
 					</Col>

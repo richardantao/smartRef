@@ -10,8 +10,9 @@ const SpecSchema = new Schema({
     type: {type: String, required: true},
     experience: {type: Number, required: true},
     availability: {type: Date, required: true},
-    distance: {type: String, required: true},
-    score: {type: Number, required: false}    
+    distance: {type: String, required: true}//,
+    // score: {type: Number, default: 0},
+    // ranking: {type: Number, default: 0}    
 });
 
 module.exports = model("specialist", SpecSchema);

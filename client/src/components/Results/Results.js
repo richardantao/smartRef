@@ -39,7 +39,7 @@ export default class Results extends Component {
         return (
             <Container>
                 {results.map(( _id,  ) => {
-
+                    
                 })}
             </Container>
         );    
