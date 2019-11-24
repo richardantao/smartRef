@@ -1,8 +1,12 @@
 import React, {Component} from "react";
 
-import {Form, FormGroup, Label, Input, Button} from "reactstrap";
+import {Form, FormGroup, Label, Input, Button, Container, Row, Col} from "reactstrap";
 
 import "./Search.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default class Search extends Component {
 	
@@ -12,16 +16,23 @@ export default class Search extends Component {
 
 	render(){
 		return(
-			<div>
-				<Form>
-					<FormGroup>
-						<Input name="healthCard" type="text" placeholder="Patient Health Card #"/>
-						<Input name="specType" type="text" placeholder="Specialist Type"/>
-						<Button onSubmit={this.handleSubmit}>
-						</Button>
-					</FormGroup>
-				</Form>
-			</div>
+			<Container>
+				<Row>
+					<Col className="bkgd">
+						<Form>
+							<FormGroup>
+								<Input name="healthCard" type="text" placeholder="Patient Health Card #"/>
+							</FormGroup>
+							<FormGroup>
+								<Input name="specType" type="text" placeholder="Specialist Type"/>
+							</FormGroup>
+								<Button onSubmit={this.handleSubmit}>
+									<FontAwesomeIcon icon={faSearch}/>
+								</Button>
+						</Form>
+					</Col>
+				</Row>
+			</Container>
 		)
 	}
 }
