@@ -49,63 +49,80 @@ app.get("/search/:_id?", (req, res) => {
     };
         
     computeAlgorithm = (patient, specialists, callback) => {   
-        let ranking = specialists.length;
-        let total = 0;
-         
-        // compute averages
-        // moment format
-        for(let i = 0; specialists.length; i++) {
-            total = total + specialists.availability;
-        };
-        avgAvail = total/specialists.length;
-        total = 0;
-
-        for(let i = 0; specialists.length; i++) {
-            total = total + specialists.distance;
-        };
-        avgDist = total/specialists.length;
-        total = 0;
-
-        for(let i = 0; specialists.length; i++) {
-            total = total + specialists.experience;
-        };
-        avgExp = total/specialists/specialists.length;
-
-        // calculate standard deviations
-        stdAvail = ;
-        stdDist = ;
-        stdExp = ;
-
-        // compute scores
-        for(let i = 0; specialists.length; i++) {
-            score = 3.68*(specialists.experience-avgExp)/stdExp - 
-            2.33*(specialists.availability-avgAvail)/stdAvail - 
-            (specialists.distance-avgDist)/stdDist;
-
-            specialists.score = score;
-        };
-
-        for(let i = 0; specialists.length; i++) {
-            for(let j = 0; specialists.length; i++) {
-                if(specialists[i].score > specialists[j].score) {
-                    ranking = ranking - 1;
-                };
+        async const ranker = () => {
+            let ranking = specialists.length;
+            let total = 0;
+             
+            // compute averages
+            // moment format
+            for(let i = 0; specialists.length; i++) {
+                total = total + specialists.availability;
             };
-            ranking = specialists.length;
-        };
+            avgAvail = total/specialists.length;
+            total = 0;
+    
+            for(let i = 0; specialists.length; i++) {
+                total = total + specialists.distance;
+            };
+            avgDist = total/specialists.length;
+            total = 0;
+    
+            for(let i = 0; specialists.length; i++) {
+                total = total + specialists.experience;
+            };
+            avgExp = total/specialists/specialists.length;
+    
+            // calculate standard deviations
 
-        
-        // .then(rankedSpecialists => {
-        //     callback(null, patient, rankedSpecialists);
-        // })
-        // .catch(err => {
-        //     return res.status(500).json({
-        //         message: "An error occurred while computing the algorithm"
-        //     })
-        // })
+            let getSD = function (data) {
+                let m = getMean(data);
+                return Math.sqrt(data.reduce(function (sq, n) {
+                        return sq + Math.pow(n - m, 2);
+                    }, 0) / (data.length - 1));
+            };
+            
+            stdAvail = ;
+            stdDist = ;
+            stdExp = ;
+    
+            // compute scores
+            for(let i = 0; specialists.length; i++) {
+                score = 3.68*(specialists.experience-avgExp)/stdExp - 
+                2.33*(specialists.availability-avgAvail)/stdAvail - 
+                (specialists.distance-avgDist)/stdDist;
+    
+                specialists.score = score;
+            };
+    
+            for(let i = 0; specialists.length; i++) {
+                for(let j = 0; specialists.length; i++) {
+                    if(specialists[i].score > specialists[j].score) {
+                        ranking = ranking - 1;
+                    };
+                };
+                ranking = specialists.length;
+            };
+        }
+    
+        ranker.then(rankedSpecialists => {
+            callback(null, patient, rankedSpecialists);
+        })
+        .catch(err => {
+            return res.status(500).json({
+                message: "An error occurred while computing the algorithm"
+            })
+        })
     };
     
     sortSpecialists = (patient, rankedSpecialists, callback) => {
+        
+        var sortedArray = [];
+        var rank;
+        for(var i = 0; specialists.length; i++){
+            rank = specialists[i].ranking;
+            sortedArray[rank-1] = specialists[i]; 
+        }
+        return sortedArray;    
         
         // .then(sortedOptions => {
         //     callback(null, patient, sortedOptions);
@@ -117,8 +134,12 @@ app.get("/search/:_id?", (req, res) => {
         // });
     };
 
-    limitOptions = (callback) => {
-
+    limitOptions = (patient, sortedSpecialist, callback) => {
+        var limArray = [];
+        for(var i = 0; i < 10; i++){
+            limArray[i] = arraySorted[i];
+        };
+        return limArray;
     };
     
     async.waterfall([
