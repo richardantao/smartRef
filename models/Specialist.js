@@ -3,7 +3,6 @@ const Schema = require("mongoose").Schema;
 const model = require("mongoose").model;
 
 const SpecSchema = new Schema({
-    _id: Schema.Types.ObjectId,
     name: {type: String, required: true},
     sex: {type: String, required: true},
     email:{type: String, required: true},

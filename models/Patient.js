@@ -1,5 +1,4 @@
 const Schema = require("mongoose").Schema;
-const model = require("mongoose").model;
 
 const PatientSchema = new Schema({
     health: {type: String, required: true, unique: true},
@@ -14,4 +13,4 @@ const PatientSchema = new Schema({
     ]
 });
 
-module.exports = model("patient", PatientSchema);
+module.exports = PatientSchema;

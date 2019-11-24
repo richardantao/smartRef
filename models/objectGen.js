@@ -341,7 +341,7 @@ export const Specialist = [
         distance: 4
     },
     {
-        _id: "0034",
+        _id: "0035",
         name: "Gordon M. Leboldus",
         sex: "Male",
         email: "Gordon.Leboldus@Ihsc.on.ca",
@@ -351,7 +351,7 @@ export const Specialist = [
         distance: 8
     },
     {
-        _id: "0035",
+        _id: "0036",
         name: "Sumit Agrawal",
         sex: "Male",
         email: "sumit.agrawal@lhsc.on.ca",
@@ -361,7 +361,7 @@ export const Specialist = [
         distance: 15
     },
     {
-        _id: "0036",
+        _id: "0037",
         name: "Anthony Nichols",
         sex: "Male",
         email: "anthony.nichols@lhsc.on.ca",
@@ -371,7 +371,7 @@ export const Specialist = [
         distance: 15
     },
     {
-        _id: "0037",
+        _id: "0038",
         name: "Irving Fung",
         sex: "Male",
         email: "irving.fung@Ihsc.on.ca",
@@ -381,7 +381,7 @@ export const Specialist = [
         distance: 17
     },
     {
-        _id: "0038",
+        _id: "0039",
         name: "Michael Lock",
         sex: "Male",
         email: "michael.lock@lhsc.on.ca",
@@ -391,7 +391,7 @@ export const Specialist = [
         distance: 13
     },
     {
-        _id: "0039",
+        _id: "0040",
         name: "Stephen Welch",
         sex: "Male",
         email: "stephen.welch@lhsc.on.ca",
@@ -401,7 +401,7 @@ export const Specialist = [
         distance: 11
     },
     {
-        _id: "0040",
+        _id: "0041",
         name: "Irving Fung",
         sex: "Male",
         email: "irving.fung@Ihsc.on.ca",
@@ -411,7 +411,7 @@ export const Specialist = [
         distance: 14
     },
     {
-        _id: "0041",
+        _id: "0042",
         name: "Anargyros Xenocostas",
         sex: "Male",
         email: "anargyros.xenocostas@lhsc.on.ca",
@@ -421,7 +421,7 @@ export const Specialist = [
         distance: 5
     },
     {
-        _id: "0042",
+        _id: "0043",
         name: "Edward Yu",
         sex: "Male",
         email: "edward.yu@lhsc.on.ca",
@@ -431,7 +431,7 @@ export const Specialist = [
         distance: 7
     },
     {
-        _id: "0043",
+        _id: "0044",
         name: "Brian Yaremko",
         sex: "Male",
         email: "brian.yaremko@lhsc.on.ca",
@@ -441,7 +441,7 @@ export const Specialist = [
         distance: 5
     },
     {
-        _id: "0044",
+        _id: "0045",
         name: "Paula Donahue",
         sex: "Male",
         email: "Paula.donahue@Ihsc.on.ca",
@@ -451,7 +451,7 @@ export const Specialist = [
         distance: 17
     },
     {
-        _id: "0045",
+        _id: "0046",
         name: "Cyrus Hsia",
         sex: "Male",
         email: "cyrus.hsia@lhsc.on.ca",
@@ -461,7 +461,7 @@ export const Specialist = [
         distance: 15
     },
     {
-        _id: "0046",
+        _id: "0047",
         name: "Michael Kovacs",
         sex: "Male",
         email: "michael.kovacs@lhsc.on.ca",
@@ -471,7 +471,7 @@ export const Specialist = [
         distance: 13
     },
     {
-        _id: "0047",
+        _id: "0048",
         name: "Alejandro Lazo-Langner",
         sex: "Male",
         email: "alejandro.lazolangner@lhsc.on.ca",
@@ -479,128 +479,128 @@ export const Specialist = [
         experience: 4.09,
         availability: "2019-12-03,16:30",
         distance: 41
-    },
-]
+    }
+];
 
 export const Patient =[
     {
         health: "1001-123-123-AB",
         name: "Patient 1",
         Age: 21,
-        sex: M
+        sex: "Male"
     },
     {
         health: "1002-123-123-AB",
         name: "Patient 2",
         Age: 22,
-        sex: F
+        sex: "Female"
     },
     {
         health: "1003-123-123-AB",
         name: "Patient 3",
         Age: 31,
-        sex: M
+        sex: "Male"
     },
     {
         health: "1004-123-123-AB",
         name: "Patient 4",
         Age: 51,
-        sex: M
+        sex: "Male"
     },
     {
         health: "1005-123-123-AB",
         name: "Patient 5",
         Age: 71,
-        sex: M
+        sex: "Male"
     },
     {
         health: "1006-123-123-AB",
         name: "Patient 6",
         Age: 69,
-        sex: M
+        sex: "Male"
     },
     {
         health: "1007-123-123-AB",
         name: "Patient 7",
         Age: 21,
-        sex: M
+        sex: "Male"
     },
     {
         health: "1008-123-123-AB",
         name: "Patient 8",
         Age: 57,
-        sex: M
+        sex: "Male"
     },
     {
         health: "1009-123-123-AB",
         name: "Patient 9",
         Age: 54,
-        sex: M
+        sex: "Male"
     },
     {
         health: "1010-123-123-AB",
         name: "Patient 10",
         Age: 53,
-        sex: M
+        sex: "Male"
     },
     {
         health: "1011-123-123-AB",
         name: "Patient 11",
         Age: 53,
-        sex: F
+        sex: "Male"
     },
     {
         health: "1012-123-123-AB",
         name: "Patient 12",
         Age: 52,
-        sex: F
+        sex: "Male"
     },
     {
         health: "1013-123-123-AB",
         name: "Patient 13",
         Age: 48,
-        sex: F
+        sex: "Male"
     },
     {
         health: "1014-123-123-AB",
         name: "Patient 14",
         Age: 32,
-        sex: F
+        sex: "Male"
     },
     {
         health: "1015-123-123-AB",
         name: "Patient 15",
         Age: 30,
-        sex: F
+        sex: "Female"
     },
     {
         health: "1016-123-123-AB",
         name: "Patient 16",
         Age: 19,
-        sex: F
+        sex: "Female"
     },
     {
         health: "1017-123-123-AB",
         name: "Patient 17",
         Age: 15,
-        sex: F
+        sex: "Female"
     },
     {
         health: "1018-123-123-AB",
         name: "Patient 18",
         Age: 12,
-        sex: M
+        sex: "Male"
     },
     {
         health: "1019-123-123-AB",
         name: "Patient 19",
         Age: 11,
-        sex: F
+        sex: "Female"
     },
     {
         health: "1020-123-123-AB",
         name: "Patient 20",
         Age: 7,
-        sex: F
+        sex: "Female"
     }
 ]
