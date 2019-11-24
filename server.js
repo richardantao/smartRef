@@ -164,13 +164,26 @@ app.post("/booking", (req, res) => {
 
     async.parallel({
         patient: callback => {
-            
+            Patient.update({ id }, {
+                $push: {
+
+                }
+            })
         },
         specialist: callback => {
-
+            Specialist.update({ id }, {
+                $push: {
+                    
+                }
+            })
         }, 
         confirmation: callback => {
+            const message = {
 
+            };
+
+            // fix and verify
+            callback(message);
         }
     }, (err, results) => {
         if (err) {
