@@ -484,6 +484,123 @@ export const Specialist = [
 
 export const Patient =[
     {
-
+        health: "1001-123-123-AB",
+        name: "Patient 1",
+        Age: 21,
+        sex: M
+    },
+    {
+        health: "1002-123-123-AB",
+        name: "Patient 2",
+        Age: 22,
+        sex: F
+    },
+    {
+        health: "1003-123-123-AB",
+        name: "Patient 3",
+        Age: 31,
+        sex: M
+    },
+    {
+        health: "1004-123-123-AB",
+        name: "Patient 4",
+        Age: 51,
+        sex: M
+    },
+    {
+        health: "1005-123-123-AB",
+        name: "Patient 5",
+        Age: 71,
+        sex: M
+    },
+    {
+        health: "1006-123-123-AB",
+        name: "Patient 6",
+        Age: 69,
+        sex: M
+    },
+    {
+        health: "1007-123-123-AB",
+        name: "Patient 7",
+        Age: 21,
+        sex: M
+    },
+    {
+        health: "1008-123-123-AB",
+        name: "Patient 8",
+        Age: 57,
+        sex: M
+    },
+    {
+        health: "1009-123-123-AB",
+        name: "Patient 9",
+        Age: 54,
+        sex: M
+    },
+    {
+        health: "1010-123-123-AB",
+        name: "Patient 10",
+        Age: 53,
+        sex: M
+    },
+    {
+        health: "1011-123-123-AB",
+        name: "Patient 11",
+        Age: 53,
+        sex: F
+    },
+    {
+        health: "1012-123-123-AB",
+        name: "Patient 12",
+        Age: 52,
+        sex: F
+    },
+    {
+        health: "1013-123-123-AB",
+        name: "Patient 13",
+        Age: 48,
+        sex: F
+    },
+    {
+        health: "1014-123-123-AB",
+        name: "Patient 14",
+        Age: 32,
+        sex: F
+    },
+    {
+        health: "1015-123-123-AB",
+        name: "Patient 15",
+        Age: 30,
+        sex: F
+    },
+    {
+        health: "1016-123-123-AB",
+        name: "Patient 16",
+        Age: 19,
+        sex: F
+    },
+    {
+        health: "1017-123-123-AB",
+        name: "Patient 17",
+        Age: 15,
+        sex: F
+    },
+    {
+        health: "1018-123-123-AB",
+        name: "Patient 18",
+        Age: 12,
+        sex: M
+    },
+    {
+        health: "1019-123-123-AB",
+        name: "Patient 19",
+        Age: 11,
+        sex: F
+    },
+    {
+        health: "1020-123-123-AB",
+        name: "Patient 20",
+        Age: 7,
+        sex: F
     }
 ]
